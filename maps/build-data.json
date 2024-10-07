@@ -1,0 +1,1 @@
+{"width":5,"height":5,"entities":[{"type":"player","x":2,"y":4},{"type":"enemy","x":2,"y":2}],"goal-condition":{"goal":"enemies"}}

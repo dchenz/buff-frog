@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <SplitPane dividerPositions="0.857" orientation="VERTICAL" prefHeight="700.0" prefWidth="600.0">
+        <items>
+          <AnchorPane fx:id="backgroundImage" minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <AnchorPane fx:id="previewPane" layoutX="75.0" layoutY="75.0" prefHeight="450.0" prefWidth="450.0" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <SplitPane dividerPositions="0.2" prefHeight="100.0" prefWidth="600.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="200.0">
+                           <children>
+                              <Button fx:id="mainMenuButton" layoutX="35.0" layoutY="25.0" mnemonicParsing="false" onAction="#exitSelector" prefHeight="50.0" prefWidth="50.0" style="-fx-font-size: 18px;" stylesheets="@css/dungeon-style.css" text="&lt;&lt;" textFill="WHITE">
+                                 <styleClass>
+                                    <String fx:value="button" />
+                                    <String fx:value="selector-button" />
+                                 </styleClass>
+                                 <font>
+                                    <Font size="7.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </AnchorPane>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="600.0">
+                           <children>
+                              <Button fx:id="prevLevelButton" layoutX="32.5" layoutY="25.0" mnemonicParsing="false" onAction="#viewPrevious" prefHeight="50.0" prefWidth="75.0" stylesheets="@css/dungeon-style.css" text="PREV" textFill="WHITE">
+                                 <styleClass>
+                                    <String fx:value="button" />
+                                    <String fx:value="selector-button" />
+                                 </styleClass>
+                              </Button>
+                              <Button fx:id="nextLevelButton" layoutX="140.0" layoutY="25.0" mnemonicParsing="false" onAction="#viewNext" prefHeight="50.0" prefWidth="75.0" stylesheets="@css/dungeon-style.css" text="NEXT" textFill="WHITE">
+                                 <styleClass>
+                                    <String fx:value="button" />
+                                    <String fx:value="selector-button" />
+                                 </styleClass>
+                              </Button>
+                              <Button fx:id="playLevelButton" layoutX="247.5" layoutY="25.0" mnemonicParsing="false" onAction="#playSelectedLevel" prefHeight="50.0" prefWidth="200.0" styleClass="selected-level-play" stylesheets="@css/dungeon-style.css" text="PLAY LEVEL" />
+                           </children>
+                        </AnchorPane>
+                    </items>
+                  </SplitPane>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</Pane>

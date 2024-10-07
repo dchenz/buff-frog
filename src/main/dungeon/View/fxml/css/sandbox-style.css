@@ -1,0 +1,40 @@
+.sandbox-button-main {
+	-fx-font-family: "Lucida Console";
+	-fx-font-size: 16px;
+}
+
+.sandbox-button-main-create {
+	-fx-background-color: rgba(50, 200, 55, 0.6);
+	-fx-border-color: rgba(40, 170, 45, 0.7);
+	-fx-text-fill: rgba(50, 95, 50, 0.8);
+}
+
+.sandbox-button-main-exit {
+	-fx-background-color: rgba(200, 50, 55, 0.6);
+	-fx-border-color: rgba(150, 40, 45, 0.7);
+	-fx-text-fill: rgba(95, 50, 50, 0.8);
+}
+
+.sandbox-panel {
+	-fx-background-color: rgba(220, 235, 235, 0.8);
+	-fx-border-color: rgba(77, 205, 205, 0.85);
+}
+
+.sandbox-panel-buttons {
+	-fx-background-color: rgba(200, 205, 205, 0.7);
+}
+
+.sandbox-panel-heading {
+	-fx-fill: rgba(80, 150, 80, 0.8);
+}
+
+.sandbox-size-label {
+	-fx-fill: black;
+	-fx-font-size: 14px;
+}
+
+.sandbox-size-counter {
+	-fx-fill: black;
+	-fx-font-weight: bold;
+	-fx-font-size: 16px;
+}
