@@ -9,43 +9,57 @@
 <?import javafx.scene.text.Text?>
 
 
-<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+   prefHeight="700.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1"
+   xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <AnchorPane fx:id="backgroundImage" prefHeight="700.0" prefWidth="600.0" />
       <AnchorPane prefHeight="400.0" prefWidth="500.0">
          <children>
-            <AnchorPane fx:id="itemView" layoutX="50.0" layoutY="400.0" prefHeight="200.0" prefWidth="500.0" style="-fx-border-color: black; -fx-border-width: 4px; -fx-background-color: rgba(50, 50, 50, 0.5); -fx-border-radius: 25px; -fx-background-radius: 25px;">
+            <AnchorPane fx:id="itemView" layoutX="50.0" layoutY="400.0" prefHeight="200.0"
+               prefWidth="500.0"
+               style="-fx-border-color: black; -fx-border-width: 4px; -fx-background-color: rgba(50, 50, 50, 0.5); -fx-border-radius: 25px; -fx-background-radius: 25px;">
                <children>
-                  <ImageView fx:id="leftButton" fitHeight="32.0" fitWidth="32.0" layoutX="7.5" layoutY="84.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="leftButton" fitHeight="32.0" fitWidth="32.0" layoutX="7.5"
+                     layoutY="84.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../../../images/help-screen/left.png" />
                      </image>
                   </ImageView>
-                  <ImageView fx:id="rightButton" fitHeight="32.0" fitWidth="32.0" layoutX="463.0" layoutY="84.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="rightButton" fitHeight="32.0" fitWidth="32.0" layoutX="463.0"
+                     layoutY="84.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../../../images/help-screen/right.png" />
                      </image>
                   </ImageView>
                </children>
             </AnchorPane>
-            <AnchorPane fx:id="mainPane" layoutX="50.0" layoutY="160.0" prefHeight="200.0" prefWidth="500.0" style="-fx-border-color: black; -fx-border-width: 4px; -fx-background-color: rgba(50, 50, 50, 0.5); -fx-border-radius: 25px; -fx-background-radius: 25px;">
+            <AnchorPane fx:id="mainPane" layoutX="50.0" layoutY="160.0" prefHeight="200.0"
+               prefWidth="500.0"
+               style="-fx-border-color: black; -fx-border-width: 4px; -fx-background-color: rgba(50, 50, 50, 0.5); -fx-border-radius: 25px; -fx-background-radius: 25px;">
                <children>
-                  <AnchorPane fx:id="arrowKeysView" layoutX="25.0" layoutY="25.0" prefHeight="150.0" prefWidth="225.0" />
-                  <Text fill="WHITE" layoutX="273.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Use arrow keys UP, DOWN, LEFT, RIGHT to move around!" textAlignment="CENTER" wrappingWidth="193.80239868164062">
+                  <AnchorPane fx:id="arrowKeysView" layoutX="25.0" layoutY="25.0" prefHeight="150.0"
+                     prefWidth="225.0" />
+                  <Text fill="WHITE" layoutX="273.0" layoutY="54.0" strokeType="OUTSIDE"
+                     strokeWidth="0.0" text="Use arrow keys UP, DOWN, LEFT, RIGHT to move around!"
+                     textAlignment="CENTER" wrappingWidth="193.80239868164062">
                      <font>
                         <Font name="Ebrima" size="28.0" />
                      </font>
                   </Text>
                </children>
             </AnchorPane>
-            <Button fx:id="mainMenuButton" layoutX="225.0" layoutY="625.0" mnemonicParsing="false" onAction="#exitToMenu" prefHeight="50.0" prefWidth="150.0" styleClass="selector-button" stylesheets="@css/dungeon-style.css" text="GO BACK">
+            <Button fx:id="mainMenuButton" layoutX="225.0" layoutY="625.0" mnemonicParsing="false"
+               onAction="#exitToMenu" prefHeight="50.0" prefWidth="150.0"
+               styleClass="selector-button" stylesheets="@css/dungeon-style.css" text="GO BACK">
                <font>
                   <Font size="24.0" />
                </font>
             </Button>
          </children>
       </AnchorPane>
-      <ImageView fitHeight="100.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true" translateY="-250.0">
+      <ImageView fitHeight="100.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true"
+         translateY="-250.0">
          <image>
             <Image url="@../../../../images/help-screen/how-to-play.png" />
          </image>

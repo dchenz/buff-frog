@@ -1,35 +1,34 @@
 [
 	{
 		"object": "enemy",
-		"info"  : "The Screaming Frog species used to live in Buff Frog's village. They enjoy following other Frogs around and playing basketball on the weekend. However, their behaviour hasn't been the same since the day they failed their computing course."
+		"info": "The Screaming Frog species used to live in Buff Frog's village. They enjoy following other Frogs around and playing basketball on the weekend. However, their behaviour hasn't been the same since the day they failed their computing course."
 	},
 	{
 		"object": "potion",
-		"info"  : "The finest brew in the Ribbot Wizardry Lab. Noone has been able to determine what it's made of, but rumours have that it's 99% glue and the rest are the tears of the mythical Crying Frog. Screaming Frogs are allergic to this concoction."
+		"info": "The finest brew in the Ribbot Wizardry Lab. Noone has been able to determine what it's made of, but rumours have that it's 99% glue and the rest are the tears of the mythical Crying Frog. Screaming Frogs are allergic to this concoction."
 	},
 	{
 		"object": "sword",
-		"info"  : "Buff Frog went to the same high school (Zelda State High School) as his friend, Link. After a wild night and one Potion too many, Link left his sword at Buff Frog's house. He continuously promises to return the sword but keeps forgetting."
+		"info": "Buff Frog went to the same high school (Zelda State High School) as his friend, Link. After a wild night and one Potion too many, Link left his sword at Buff Frog's house. He continuously promises to return the sword but keeps forgetting."
 	},
 	{
 		"object": "key",
-		"info"  : "Made from very cheap steel but very lightweight. Buff Frog could not resist the bulk discount at the Ribbot Hardware Store and bought the entire stock. The keys have taken up most of his bedroom and there is nowhere to put them."
+		"info": "Made from very cheap steel but very lightweight. Buff Frog could not resist the bulk discount at the Ribbot Hardware Store and bought the entire stock. The keys have taken up most of his bedroom and there is nowhere to put them."
 	},
 	{
 		"object": "door",
-		"info"  : "It was the EOFY sale at the hardware store. On top of the bargain for the keys, the clerk threw in free doors to go with the keys. They never said which key was for what door. Buff Frog still does not know to this day."
+		"info": "It was the EOFY sale at the hardware store. On top of the bargain for the keys, the clerk threw in free doors to go with the keys. They never said which key was for what door. Buff Frog still does not know to this day."
 	},
 	{
 		"object": "portal",
-		"info"  : "The old Frog at the Ribbot Wizardry Lab is very clumsy. These portals have been appearing all over the forest ever since they dropped the Potion into a cauldron of Glowing Frog Slime. Noone has been brave enough to enter them." 
+		"info": "The old Frog at the Ribbot Wizardry Lab is very clumsy. These portals have been appearing all over the forest ever since they dropped the Potion into a cauldron of Glowing Frog Slime. Noone has been brave enough to enter them."
 	},
 	{
 		"object": "exit",
-		"info"  : "Folklore passed down by the Ribbot Elders describe a mystical entity that resides at the bottom of the Pogger Canyons. Believed to be untouched since the Stone Age, many heroic warriors have perished in journeying towards it." 	
+		"info": "Folklore passed down by the Ribbot Elders describe a mystical entity that resides at the bottom of the Pogger Canyons. Believed to be untouched since the Stone Age, many heroic warriors have perished in journeying towards it."
 	},
 	{
 		"object": "treasure",
-		"info"  : "Ever since Buff Frog won 50 Ribbot Coins from the Weightlifting Competition, he's been obsessed with objects of value. Sometimes the objects collected are worthless, but he keeps them anyway because they are shiny."
+		"info": "Ever since Buff Frog won 50 Ribbot Coins from the Weightlifting Competition, he's been obsessed with objects of value. Sometimes the objects collected are worthless, but he keeps them anyway because they are shiny."
 	}
 ]
-

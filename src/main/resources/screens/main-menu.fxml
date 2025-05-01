@@ -6,15 +6,21 @@
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.text.Font?>
 
-<StackPane fx:id="backgroundImage" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<StackPane fx:id="backgroundImage" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+   minWidth="-Infinity" prefHeight="700.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1"
+   xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <AnchorPane fx:id="mainImage" prefHeight="550.0" prefWidth="550.0" translateX="25.0" translateY="75.0" />
-      <AnchorPane fx:id="gameTitle" prefHeight="250.0" prefWidth="400.0" translateX="100.0" translateY="350.0" />
+      <AnchorPane fx:id="mainImage" prefHeight="550.0" prefWidth="550.0" translateX="25.0"
+         translateY="75.0" />
+      <AnchorPane fx:id="gameTitle" prefHeight="250.0" prefWidth="400.0" translateX="100.0"
+         translateY="350.0" />
       <AnchorPane prefHeight="250.0" prefWidth="450.0" translateX="75.0" translateY="450.0">
          <children>
             <AnchorPane layoutX="20.0" layoutY="20.0" prefHeight="75.0" prefWidth="410.0">
                <children>
-                  <Button fx:id="startButton" alignment="CENTER" mnemonicParsing="false" onAction="#playCurrentLevel" prefHeight="75.0" prefWidth="410.0" stylesheets="@css/dungeon-style.css" text="START GAME" textFill="WHITE">
+                  <Button fx:id="startButton" alignment="CENTER" mnemonicParsing="false"
+                     onAction="#playCurrentLevel" prefHeight="75.0" prefWidth="410.0"
+                     stylesheets="@css/dungeon-style.css" text="START GAME" textFill="WHITE">
                      <font>
                         <Font name="Eras Light ITC" size="36.0" />
                      </font>
@@ -27,7 +33,9 @@
             </AnchorPane>
             <AnchorPane layoutX="20.0" layoutY="182.5" prefHeight="47.5" prefWidth="200.0">
                <children>
-                  <Button fx:id="levelSelectButton" alignment="CENTER" mnemonicParsing="false" onAction="#selectLevelMap" prefHeight="47.5" prefWidth="200.0" stylesheets="@css/dungeon-style.css" text="LEVELS" textFill="WHITE">
+                  <Button fx:id="levelSelectButton" alignment="CENTER" mnemonicParsing="false"
+                     onAction="#selectLevelMap" prefHeight="47.5" prefWidth="200.0"
+                     stylesheets="@css/dungeon-style.css" text="LEVELS" textFill="WHITE">
                      <font>
                         <Font name="Eras Light ITC" size="36.0" />
                      </font>
@@ -40,7 +48,9 @@
             </AnchorPane>
             <AnchorPane layoutX="20.0" layoutY="115.0" prefHeight="47.5" prefWidth="410.0">
                <children>
-                  <Button fx:id="instructionsButton" alignment="CENTER" mnemonicParsing="false" onAction="#openInstructions" prefHeight="47.5" prefWidth="410.0" stylesheets="@css/dungeon-style.css" text="INSTRUCTIONS" textFill="WHITE">
+                  <Button fx:id="instructionsButton" alignment="CENTER" mnemonicParsing="false"
+                     onAction="#openInstructions" prefHeight="47.5" prefWidth="410.0"
+                     stylesheets="@css/dungeon-style.css" text="INSTRUCTIONS" textFill="WHITE">
                      <font>
                         <Font name="Eras Light ITC" size="36.0" />
                      </font>
@@ -53,7 +63,9 @@
             </AnchorPane>
             <AnchorPane layoutX="230.0" layoutY="182.5" prefHeight="47.5" prefWidth="200.0">
                <children>
-                  <Button fx:id="sandboxButton" alignment="CENTER" mnemonicParsing="false" onAction="#openSandbox" prefHeight="47.5" prefWidth="200.0" stylesheets="@css/dungeon-style.css" text="SANDBOX" textFill="WHITE">
+                  <Button fx:id="sandboxButton" alignment="CENTER" mnemonicParsing="false"
+                     onAction="#openSandbox" prefHeight="47.5" prefWidth="200.0"
+                     stylesheets="@css/dungeon-style.css" text="SANDBOX" textFill="WHITE">
                      <font>
                         <Font name="Eras Light ITC" size="36.0" />
                      </font>

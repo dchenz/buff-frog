@@ -9,47 +9,70 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyReleased="#handleMovement" prefHeight="700.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+   onKeyReleased="#handleMovement" prefHeight="700.0" prefWidth="600.0"
+   xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <AnchorPane fx:id="viewPane" prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: black;" />
-    <AnchorPane layoutY="600.0" minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="600.0">
+      <AnchorPane fx:id="viewPane" prefHeight="600.0" prefWidth="600.0"
+         style="-fx-background-color: black;" />
+      <AnchorPane layoutY="600.0" minHeight="0.0" minWidth="0.0" prefHeight="100.0"
+         prefWidth="600.0">
          <children>
             <SplitPane layoutX="-1.0" layoutY="-1.0" prefHeight="100.0" prefWidth="600.0">
-              <items>
-                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="200.0" styleClass="dungeon-score-pane" stylesheets="@css/dungeon-style.css">
+               <items>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="200.0"
+                     styleClass="dungeon-score-pane" stylesheets="@css/dungeon-style.css">
                      <children>
-                        <ImageView fx:id="openObjectivesButton" fitHeight="100.0" fitWidth="235.0" layoutX="107.5" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="openObjectivesButton" fitHeight="100.0" fitWidth="235.0"
+                           layoutX="107.5" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../../../../images/app/task-button.png" />
                            </image>
                         </ImageView>
-                        <AnchorPane layoutX="107.5" layoutY="55.0" prefHeight="50.0" prefWidth="155.0" />
-                        <Button fx:id="mainMenuButton" layoutX="145.0" layoutY="65.0" mnemonicParsing="false" onAction="#exitMap" prefHeight="25.0" prefWidth="105.0" styleClass="dungeon-button" stylesheets="@css/dungeon-style.css" text="MAIN MENU" textFill="WHITE">
+                        <AnchorPane layoutX="107.5" layoutY="55.0" prefHeight="50.0"
+                           prefWidth="155.0" />
+                        <Button fx:id="mainMenuButton" layoutX="145.0" layoutY="65.0"
+                           mnemonicParsing="false" onAction="#exitMap" prefHeight="25.0"
+                           prefWidth="105.0" styleClass="dungeon-button"
+                           stylesheets="@css/dungeon-style.css" text="MAIN MENU" textFill="WHITE">
                            <font>
                               <Font name="System Bold" size="12.0" />
                            </font>
                         </Button>
-                        <Text layoutX="25.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SCORE">
+                        <Text layoutX="25.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0"
+                           text="SCORE">
                            <font>
                               <Font name="Consolas Bold" size="24.0" />
                            </font>
                         </Text>
-                        <AnchorPane fx:id="mapScore" layoutX="35.0" layoutY="30.0" prefHeight="30.0" prefWidth="50.0" />
-                        <Button fx:id="restartButton" layoutX="20.0" layoutY="65.0" mnemonicParsing="false" onAction="#restartMap" prefHeight="25.0" prefWidth="105.0" styleClass="dungeon-button" stylesheets="@css/dungeon-style.css" text="RESTART" textAlignment="CENTER" textFill="WHITE">
+                        <AnchorPane fx:id="mapScore" layoutX="35.0" layoutY="30.0" prefHeight="30.0"
+                           prefWidth="50.0" />
+                        <Button fx:id="restartButton" layoutX="20.0" layoutY="65.0"
+                           mnemonicParsing="false" onAction="#restartMap" prefHeight="25.0"
+                           prefWidth="105.0" styleClass="dungeon-button"
+                           stylesheets="@css/dungeon-style.css" text="RESTART"
+                           textAlignment="CENTER" textFill="WHITE">
                            <font>
                               <Font name="System Bold" size="12.0" />
                            </font>
                         </Button>
-                        <AnchorPane layoutX="350.0" layoutY="10.0" prefHeight="75.0" prefWidth="225.0" styleClass="dungeon-item-pane" stylesheets="@css/dungeon-style.css">
+                        <AnchorPane layoutX="350.0" layoutY="10.0" prefHeight="75.0"
+                           prefWidth="225.0" styleClass="dungeon-item-pane"
+                           stylesheets="@css/dungeon-style.css">
                            <children>
-                              <AnchorPane fx:id="potionSlot" layoutX="150.0" prefHeight="75.0" prefWidth="75.0" styleClass="dungeon-item-slot" stylesheets="@css/dungeon-style.css" />
-                              <AnchorPane fx:id="keySlot" prefHeight="75.0" prefWidth="75.0" styleClass="dungeon-item-slot" stylesheets="@css/dungeon-style.css" />
-                              <AnchorPane fx:id="swordSlot" layoutX="75.0" prefHeight="75.0" prefWidth="75.0" styleClass="dungeon-item-slot" stylesheets="@css/dungeon-style.css" />
+                              <AnchorPane fx:id="potionSlot" layoutX="150.0" prefHeight="75.0"
+                                 prefWidth="75.0" styleClass="dungeon-item-slot"
+                                 stylesheets="@css/dungeon-style.css" />
+                              <AnchorPane fx:id="keySlot" prefHeight="75.0" prefWidth="75.0"
+                                 styleClass="dungeon-item-slot" stylesheets="@css/dungeon-style.css" />
+                              <AnchorPane fx:id="swordSlot" layoutX="75.0" prefHeight="75.0"
+                                 prefWidth="75.0" styleClass="dungeon-item-slot"
+                                 stylesheets="@css/dungeon-style.css" />
                            </children>
                         </AnchorPane>
                      </children>
                   </AnchorPane>
-              </items>
+               </items>
             </SplitPane>
          </children>
       </AnchorPane>
