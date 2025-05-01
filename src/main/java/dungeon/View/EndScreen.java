@@ -1,14 +1,12 @@
 package dungeon.View;
 
+import dungeon.Controller.EndScreenController;
 import java.io.IOException;
-
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import dungeon.Controller.EndScreenController;
 
 public class EndScreen {
-
 	private Stage stage;
 
 	private Scene scene;
@@ -24,7 +22,6 @@ public class EndScreen {
 		loader.setController(controller);
 
 		scene = new Scene(loader.load(), 600, 700);
-
 	}
 
 	public void start() {
@@ -36,5 +33,4 @@ public class EndScreen {
 	public EndScreenController getController() {
 		return controller;
 	}
-
 }

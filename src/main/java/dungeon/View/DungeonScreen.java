@@ -1,14 +1,12 @@
 package dungeon.View;
 
+import dungeon.Controller.DungeonScreenController;
 import java.io.IOException;
-
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import dungeon.Controller.DungeonScreenController;
 
 public class DungeonScreen {
-
 	private Stage stage;
 
 	private Scene scene;
@@ -25,7 +23,6 @@ public class DungeonScreen {
 		loader.setController(controller);
 
 		scene = new Scene(loader.load(), 600, 700);
-
 	}
 
 	public void start() {
@@ -50,5 +47,4 @@ public class DungeonScreen {
 	public DungeonScreenController getController() {
 		return controller;
 	}
-
 }

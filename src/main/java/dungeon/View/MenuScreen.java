@@ -1,14 +1,12 @@
 package dungeon.View;
 
+import dungeon.Controller.MenuScreenController;
 import java.io.IOException;
-
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import dungeon.Controller.MenuScreenController;
 
 public class MenuScreen {
-
 	private Stage stage;
 
 	private Scene scene;
@@ -25,7 +23,6 @@ public class MenuScreen {
 		loader.setController(controller);
 
 		scene = new Scene(loader.load(), 600, 700);
-
 	}
 
 	public void start() {
@@ -36,5 +33,4 @@ public class MenuScreen {
 	public MenuScreenController getController() {
 		return controller;
 	}
-
 }

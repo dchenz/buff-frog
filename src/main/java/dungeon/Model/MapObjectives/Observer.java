@@ -1,13 +1,13 @@
 package dungeon.Model.MapObjectives;
 
 /**
- * 
- * Objective observer 
- * 
+ *
+ * Objective observer
+ *
  * The objective must listen for changes in the completed amount
- * 
+ *
  * These implemented methods will be called in the relevant entity trigger() methods
- * 
+ *
  *
  */
 

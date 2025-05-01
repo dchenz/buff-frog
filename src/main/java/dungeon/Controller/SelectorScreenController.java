@@ -1,49 +1,39 @@
 package dungeon.Controller;
 
-import javafx.fxml.FXML;
-import javafx.scene.control.Button;
-import javafx.event.ActionEvent;
-import javafx.scene.layout.GridPane;
 import dungeon.Model.DungeonEntityBuilder;
 import dungeon.View.DungeonScreen;
 import dungeon.View.MenuScreen;
-import javafx.scene.layout.AnchorPane;
-import javafx.scene.image.ImageView;
-import javafx.scene.image.Image;
-import javafx.scene.effect.BoxBlur;
-
 import java.io.FileNotFoundException;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.scene.control.Button;
+import javafx.scene.effect.BoxBlur;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
+import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.GridPane;
 
 public class SelectorScreenController {
-
 	private MenuScreen menuScreen;
 
 	private DungeonScreen dungeonScreen;
 
-	@FXML
-	private AnchorPane backgroundImage;
+	@FXML private AnchorPane backgroundImage;
 
-	@FXML
-	private Button mainMenuButton;
+	@FXML private Button mainMenuButton;
 
-	@FXML
-	private Button prevLevelButton;
+	@FXML private Button prevLevelButton;
 
-	@FXML
-	private Button nextLevelButton;
+	@FXML private Button nextLevelButton;
 
-	@FXML
-	private Button playLevelButton;
+	@FXML private Button playLevelButton;
 
-	@FXML
-	private AnchorPane previewPane;
+	@FXML private AnchorPane previewPane;
 
 	private int currentLevel;
 	private int maxLevel;
 
-	public SelectorScreenController() {
-
-	}
+	public SelectorScreenController() {}
 
 	@FXML
 	public void exitSelector(ActionEvent event) {
@@ -121,9 +111,10 @@ public class SelectorScreenController {
 
 	@FXML
 	public void initialize() {
-		ImageView backgroundView = new ImageView(new Image(getClass().getResourceAsStream("/images/app/selector-screen-bg.jpg"), 1500, 1500, true, true));
+		ImageView backgroundView = new ImageView(
+			new Image(getClass().getResourceAsStream("/images/app/selector-screen-bg.jpg"), 1500,
+				1500, true, true));
 		backgroundView.setEffect(new BoxBlur(12, 12, 1));
 		backgroundImage.getChildren().add(0, backgroundView);
 	}
-
 }

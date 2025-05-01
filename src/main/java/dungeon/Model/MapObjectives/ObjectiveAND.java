@@ -2,11 +2,11 @@ package dungeon.Model.MapObjectives;
 
 /**
  * AND
- * 
+ *
  * only complete when all complete
- * 
+ *
  * Uses composite pattern
- * 
+ *
  *
  */
 
@@ -14,7 +14,7 @@ public class ObjectiveAND extends ConditionalObjective {
 	public ObjectiveAND() {
 		super();
 	}
-	
+
 	// all must be complete
 	@Override
 	public boolean isCompleted() {
@@ -31,5 +31,4 @@ public class ObjectiveAND extends ConditionalObjective {
 	protected String getObjectiveName() {
 		return "AND";
 	}
-	
 }

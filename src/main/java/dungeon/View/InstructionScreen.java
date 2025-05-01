@@ -1,14 +1,12 @@
 package dungeon.View;
 
+import dungeon.Controller.InstructionScreenController;
 import java.io.IOException;
-
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import dungeon.Controller.InstructionScreenController;
 
 public class InstructionScreen {
-
 	private Stage stage;
 
 	private Scene scene;
@@ -24,7 +22,6 @@ public class InstructionScreen {
 		loader.setController(controller);
 
 		scene = new Scene(loader.load(), 600, 700);
-
 	}
 
 	public void start() {
@@ -35,5 +32,4 @@ public class InstructionScreen {
 	public InstructionScreenController getController() {
 		return controller;
 	}
-
 }

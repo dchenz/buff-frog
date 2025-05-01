@@ -1,14 +1,12 @@
 package dungeon.View;
 
+import dungeon.Controller.SandboxScreenController;
 import java.io.IOException;
-
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import dungeon.Controller.SandboxScreenController;
 
 public class SandboxScreen {
-
 	private Stage stage;
 
 	private Scene scene;
@@ -24,7 +22,6 @@ public class SandboxScreen {
 		loader.setController(controller);
 
 		scene = new Scene(loader.load(), 600, 700);
-
 	}
 
 	public void start() {
@@ -37,5 +34,4 @@ public class SandboxScreen {
 	public SandboxScreenController getController() {
 		return controller;
 	}
-
 }

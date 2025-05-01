@@ -13,7 +13,7 @@ public class Exit extends Entity {
 	public Exit(int x, int y) {
 		super(x, y);
 	}
-	
+
 	public void trigger(Map level, CompletableObjective levelTask, Objective task) {
 		if (isVisible()) { // if visible
 			if (task != null) { // if objective exists
@@ -27,5 +27,4 @@ public class Exit extends Entity {
 			}
 		}
 	}
-
 }
