@@ -12,3 +12,4 @@
 # Compiled class files
 *.class
 
+dependency-reduced-pom.xml
