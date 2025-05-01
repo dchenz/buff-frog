@@ -20,7 +20,7 @@ public class Main extends Application {
 	@Override
 	public void start(Stage primaryStage) {
 		primaryStage.setTitle("ADVENTURES OF BUFF FROG"); // Set name
-		primaryStage.getIcons().add(new Image("file:images/app/frog.png")); // Set app icon
+		primaryStage.getIcons().add(new Image(getClass().getResourceAsStream("/images/app/frog.png"))); // Set app icon
 		primaryStage.setResizable(false); // Set not resizable
 
 		// Prevent Spacebar andEnter from activating buttons

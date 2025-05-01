@@ -20,6 +20,7 @@ import javafx.scene.text.FontWeight;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.InputStream;
 import java.util.HashMap;
 
 import dungeon.Model.Map;
@@ -81,7 +82,8 @@ public abstract class DungeonBuilder {
      * @throws FileNotFoundException    : File not found
      */
     public DungeonBuilder(String filename) throws FileNotFoundException {
-        map = new JSONObject(new JSONTokener(new FileReader("maps/" + filename)));
+		InputStream input = getClass().getResourceAsStream("/maps/" + filename);
+        map = new JSONObject(new JSONTokener(input));
         
         mapGrid = new GridPane();
         itemViews = new HashMap<ItemTypes, AnchorPane>();
@@ -91,13 +93,13 @@ public abstract class DungeonBuilder {
         // Store image views for the inventory item slots on the UI
         // Will toggle between visibility when player picks them up
         itemImages.put(ItemTypes.KEY, new ImageView(
-        		new Image("file:images/sprites/key.png", ICON_SIZE, ICON_SIZE, true, true)
+        		new Image(getClass().getResourceAsStream("/images/sprites/key.png"), ICON_SIZE, ICON_SIZE, true, true)
 		));
         itemImages.put(ItemTypes.SWORD, new ImageView(
-        		new Image("file:images/sprites/sword.png", ICON_SIZE, ICON_SIZE, true, true)
+        		new Image(getClass().getResourceAsStream("/images/sprites/sword.png"), ICON_SIZE, ICON_SIZE, true, true)
 		));
         itemImages.put(ItemTypes.POTION, new ImageView(
-        		new Image("file:images/sprites/potion.png", ICON_SIZE, ICON_SIZE, true, true)
+        		new Image(getClass().getResourceAsStream("/images/sprites/potion.png"), ICON_SIZE, ICON_SIZE, true, true)
 		));
     }
 
@@ -472,7 +474,7 @@ public abstract class DungeonBuilder {
 		}
 		
 		// set default grass tiles on the entire grid pane
-		Image ground = new Image("file:images/sprites/grass.png", TILE_SIZE, TILE_SIZE, true, true);
+		Image ground = new Image(getClass().getResourceAsStream("/images/sprites/grass.png"), TILE_SIZE, TILE_SIZE, true, true);
 		for (int row = 0; row < mapHeight; row++) {
 			for (int col = 0; col < mapWidth; col++) {
 				mapGrid.add(new ImageView(ground), col, row);

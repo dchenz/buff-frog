@@ -41,7 +41,7 @@ public class DungeonEntityBuilder extends DungeonBuilder {
     @Override
     public Player onLoad(Player player) {
         ImageView view = new ImageView(new Image(
-        		"file:images/sprites/player.png", TILE_SIZE, TILE_SIZE, true, true));
+        		getClass().getResourceAsStream("/images/sprites/player.png"), TILE_SIZE, TILE_SIZE, true, true));
         addEntity(player, view);
         //player.loadViews(); <- Didn't have time to put rotating player views
         return player;
@@ -50,7 +50,7 @@ public class DungeonEntityBuilder extends DungeonBuilder {
     @Override
     public BarrierEntity onLoad(Wall wall) {
         ImageView view = new ImageView(new Image(
-        		"file:images/sprites/wall.png", TILE_SIZE, TILE_SIZE, true, true));
+        		getClass().getResourceAsStream("/images/sprites/wall.png"), TILE_SIZE, TILE_SIZE, true, true));
         addEntity(wall, view);
         return wall;
     }
@@ -58,7 +58,7 @@ public class DungeonEntityBuilder extends DungeonBuilder {
     @Override
     public BarrierEntity onLoad(Door door) {
     	ImageView view = new ImageView(new Image(
-    			"file:images/sprites/closed_door.png", TILE_SIZE, TILE_SIZE, true, true));
+    			getClass().getResourceAsStream("/images/sprites/closed_door.png"), TILE_SIZE, TILE_SIZE, true, true));
     	
     	// Doors will change their image when their "isOpen" boolean property changes to TRUE 
     	
@@ -67,7 +67,7 @@ public class DungeonEntityBuilder extends DungeonBuilder {
     		public void changed(ObservableValue<? extends Boolean> observable,
     				Boolean oldValue, Boolean newValue) {
     			assert newValue.booleanValue() == true;
-    			view.setImage(new Image("file:images/sprites/open_door.png", TILE_SIZE, TILE_SIZE, true, true));
+    			view.setImage(new Image(getClass().getResourceAsStream("/images/sprites/open_door.png"), TILE_SIZE, TILE_SIZE, true, true));
     		}
     	});
         addEntity(door, view);
@@ -77,7 +77,7 @@ public class DungeonEntityBuilder extends DungeonBuilder {
     @Override
     public BarrierEntity onLoad(Portal portal) {
     	ImageView view = new ImageView(new Image(
-    			"file:images/sprites/portal.png", TILE_SIZE, TILE_SIZE, true, true));
+    			getClass().getResourceAsStream("/images/sprites/portal.png"), TILE_SIZE, TILE_SIZE, true, true));
     	addEntity(portal, view);
     	return portal;
     }
@@ -85,7 +85,7 @@ public class DungeonEntityBuilder extends DungeonBuilder {
     @Override
     public Enemy onLoad(Enemy enemy) {
         ImageView view = new ImageView(new Image(
-        		"file:images/sprites/enemy.png", TILE_SIZE, TILE_SIZE, true, true));
+        		getClass().getResourceAsStream("/images/sprites/enemy.png"), TILE_SIZE, TILE_SIZE, true, true));
         addEntity(enemy, view);
         return enemy;
     }
@@ -93,7 +93,7 @@ public class DungeonEntityBuilder extends DungeonBuilder {
     @Override
     public Boulder onLoad(Boulder boulder) {
         ImageView view = new ImageView(new Image(
-        		"file:images/sprites/boulder.png", TILE_SIZE, TILE_SIZE, true, true));
+        		getClass().getResourceAsStream("/images/sprites/boulder.png"), TILE_SIZE, TILE_SIZE, true, true));
         addEntity(boulder, view);
         return boulder;
     }
@@ -101,7 +101,7 @@ public class DungeonEntityBuilder extends DungeonBuilder {
     @Override
     public FloorSwitch onLoad(FloorSwitch floor) {
         ImageView view = new ImageView(new Image(
-        		"file:images/sprites/switch.png", TILE_SIZE, TILE_SIZE, true, true));
+        		getClass().getResourceAsStream("/images/sprites/switch.png"), TILE_SIZE, TILE_SIZE, true, true));
         addEntity(floor, view);
         return floor;
     }
@@ -109,7 +109,7 @@ public class DungeonEntityBuilder extends DungeonBuilder {
     @Override
     public Exit onLoad(Exit exit) {
     	ImageView view = new ImageView(new Image(
-    			"file:images/sprites/exit.png", TILE_SIZE, TILE_SIZE, true, true));
+    			getClass().getResourceAsStream("/images/sprites/exit.png"), TILE_SIZE, TILE_SIZE, true, true));
     	addEntity(exit, view);
     	return exit;
     }
@@ -117,7 +117,7 @@ public class DungeonEntityBuilder extends DungeonBuilder {
     @Override
     public Item onLoad(Key key) {
         ImageView view = new ImageView(new Image(
-        		"file:images/sprites/key.png", TILE_SIZE, TILE_SIZE, true, true));
+        		getClass().getResourceAsStream("/images/sprites/key.png"), TILE_SIZE, TILE_SIZE, true, true));
         addEntity(key, view);
         return key;
     }
@@ -125,7 +125,7 @@ public class DungeonEntityBuilder extends DungeonBuilder {
     @Override
     public Item onLoad(Sword sword) {
         ImageView view = new ImageView(new Image(
-        		"file:images/sprites/sword.png", TILE_SIZE, TILE_SIZE, true, true));
+        		getClass().getResourceAsStream("/images/sprites/sword.png"), TILE_SIZE, TILE_SIZE, true, true));
         addEntity(sword, view);
         return sword;
     }
@@ -133,7 +133,7 @@ public class DungeonEntityBuilder extends DungeonBuilder {
     @Override
     public Item onLoad(Potion potion) {
         ImageView view = new ImageView(new Image(
-        		"file:images/sprites/potion.png", TILE_SIZE, TILE_SIZE, true, true));
+        		getClass().getResourceAsStream("/images/sprites/potion.png"), TILE_SIZE, TILE_SIZE, true, true));
         addEntity(potion, view);
         return potion;
     }
@@ -141,7 +141,7 @@ public class DungeonEntityBuilder extends DungeonBuilder {
     @Override
     public Item onLoad(Treasure treasure) {
         ImageView view = new ImageView(new Image(
-        		"file:images/sprites/treasure.png", TILE_SIZE, TILE_SIZE, true, true));
+        		getClass().getResourceAsStream("/images/sprites/treasure.png"), TILE_SIZE, TILE_SIZE, true, true));
         addEntity(treasure, view);
         return treasure;
     }

@@ -74,12 +74,12 @@ public class MenuScreenController {
 	@FXML
 	public void initialize() {
 
-		String backgroundFile = String.format("file:images/menu-backgrounds/background%d.jpg", new Random().nextInt(3) + 1);
+		String backgroundFile = String.format("/images/menu-backgrounds/background%d.jpg", new Random().nextInt(3) + 1);
 
-		mainImage.getChildren().add(0, new ImageView(new Image("file:images/app/main-image.png", 550, 550, true, true)));
-		gameTitle.getChildren().add(new ImageView(new Image("file:images/app/title.png", 400, 250, true, true)));
+		mainImage.getChildren().add(0, new ImageView(new Image(getClass().getResourceAsStream("/images/app/main-image.png"), 550, 550, true, true)));
+		gameTitle.getChildren().add(new ImageView(new Image(getClass().getResourceAsStream("/images/app/title.png"), 400, 250, true, true)));
 
-		ImageView backgroundView = new ImageView(new Image(backgroundFile, 2000, 2000, true, true));
+		ImageView backgroundView = new ImageView(new Image(getClass().getResourceAsStream(backgroundFile), 2000, 2000, true, true));
 		backgroundView.setEffect(new BoxBlur(12, 12, 1));
 
 		backgroundImage.getChildren().add(0, backgroundView);
@@ -100,7 +100,7 @@ public class MenuScreenController {
 		icon.setLayoutX(350);
 		icon.setLayoutY(75);
 		
-		ImageView image = new ImageView(new Image("file:images/app/hammer.png", 100, 100, true, true));
+		ImageView image = new ImageView(new Image(getClass().getResourceAsStream("/images/app/hammer.png"), 100, 100, true, true));
 		
 		icon.getChildren().add(image);
 		

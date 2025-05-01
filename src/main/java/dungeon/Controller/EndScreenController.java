@@ -29,10 +29,10 @@ public class EndScreenController {
 		fadeCover.setOpacity(1);
 		fadeScreen(fadeCover, 2.5, true, null);
 
-		ImageView player = createView("file:images/end/end_frog.png", 0, 0);
-		ImageView clouds = createView("file:images/end/clouds.png", 0, 0);
-		ImageView enemy  = createView("file:images/end/enemy_frog.png", 350, 0);
-		ImageView desert = createView("file:images/end/desert.png", 0, 0);
+		ImageView player = createView("/images/end/end_frog.png", 0, 0);
+		ImageView clouds = createView("/images/end/clouds.png", 0, 0);
+		ImageView enemy  = createView("/images/end/enemy_frog.png", 350, 0);
+		ImageView desert = createView("/images/end/desert.png", 0, 0);
 		
 		screenPane.getChildren().add(0, clouds);
 		screenPane.getChildren().add(0, enemy);
@@ -55,7 +55,7 @@ public class EndScreenController {
 	}
 	
 	private ImageView createView(String filename, double x, double y) {
-		ImageView view = new ImageView(new Image(filename, 600, 450, true, true));
+		ImageView view = new ImageView(new Image(getClass().getResourceAsStream(filename), 600, 450, true, true));
 		view.setTranslateX(x);
 		view.setTranslateY(y);
 		return view;

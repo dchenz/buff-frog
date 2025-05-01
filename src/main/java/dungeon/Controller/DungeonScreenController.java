@@ -312,7 +312,7 @@ public class DungeonScreenController {
 			pane.setLayoutY(200);
 			
 			ImageView obj = new ImageView(new Image(
-					"file:images/sprites/" + image, iconWidth, iconWidth, true, true));
+					getClass().getResourceAsStream("/images/sprites/" + image), iconWidth, iconWidth, true, true));
 			
 			pane.getChildren().add(obj);
 			

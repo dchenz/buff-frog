@@ -119,7 +119,7 @@ public class SandboxScreenController {
 	// CONSTRUCTOR
 	public SandboxScreenController() {
 		tileSize = new SimpleDoubleProperty();
-		defaultTile = new Image("file:images/sprites/grass.png", 32, 32, true, true);
+		defaultTile = new Image(getClass().getResourceAsStream("/images/sprites/grass.png"), 32, 32, true, true);
 		nRows = ROWS_MIN;
 		nCols = COLS_MIN;
 		tileEffect = new ColorAdjust();
@@ -435,7 +435,7 @@ public class SandboxScreenController {
 	
 	private AnchorPane createEntityIcon(int n, String name) {
 		ImageView image = new ImageView(new Image(
-				String.format("file:images/sprites/%s.png", name), 32, 32, true, true));
+				getClass().getResourceAsStream(String.format("/images/sprites/%s.png", name)), 32, 32, true, true));
 		
 		image.setFitHeight(45);
 		image.setFitWidth(45);

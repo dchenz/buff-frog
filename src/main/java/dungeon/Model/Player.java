@@ -95,7 +95,7 @@ public class Player extends RotatableEntity implements Killable {
 	 */
 	public void loadViews() {
 		normalView = getImage();
-		invincibleView = new Image("file:images/sprites/invincible_player.gif", 
+		invincibleView = new Image(getClass().getResourceAsStream("/images/sprites/invincible_player.gif"), 
 				normalView.getWidth(), normalView.getHeight(), true, true);
 		
 		items.getItemProperty(ItemTypes.POTION).addListener(new ChangeListener<Boolean>() {

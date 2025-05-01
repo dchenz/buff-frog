@@ -121,7 +121,7 @@ public class SelectorScreenController {
 
 	@FXML
 	public void initialize() {
-		ImageView backgroundView = new ImageView(new Image("file:images/app/selector-screen-bg.jpg", 1500, 1500, true, true));
+		ImageView backgroundView = new ImageView(new Image(getClass().getResourceAsStream("/images/app/selector-screen-bg.jpg"), 1500, 1500, true, true));
 		backgroundView.setEffect(new BoxBlur(12, 12, 1));
 		backgroundImage.getChildren().add(0, backgroundView);
 	}

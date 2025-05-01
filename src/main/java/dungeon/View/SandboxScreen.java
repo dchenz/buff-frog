@@ -10,32 +10,32 @@ import dungeon.Controller.SandboxScreenController;
 public class SandboxScreen {
 
 	private Stage stage;
-	
+
 	private Scene scene;
-	
+
 	private SandboxScreenController controller;
-	
+
 	public SandboxScreen(Stage stage) throws IOException {
 		this.stage = stage;
-		
-		FXMLLoader loader = new FXMLLoader(getClass().getResource("fxml/sandbox-frame.fxml"));
-		
+
+		FXMLLoader loader = new FXMLLoader(getClass().getResource("/screens/sandbox-frame.fxml"));
+
 		controller = new SandboxScreenController();
 		loader.setController(controller);
-		
+
 		scene = new Scene(loader.load(), 600, 700);
-		
+
 	}
-	
+
 	public void start() {
 		controller.reset();
 		controller.initialize();
 		stage.setScene(scene);
 		stage.show();
 	}
-	
+
 	public SandboxScreenController getController() {
 		return controller;
 	}
-	
+
 }

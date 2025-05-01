@@ -10,30 +10,30 @@ import dungeon.Controller.InstructionScreenController;
 public class InstructionScreen {
 
 	private Stage stage;
-	
+
 	private Scene scene;
-	
+
 	private InstructionScreenController controller;
-	
+
 	public InstructionScreen(Stage stage) throws IOException {
 		this.stage = stage;
-		
-		FXMLLoader loader = new FXMLLoader(getClass().getResource("fxml/instructions.fxml"));
-		
+
+		FXMLLoader loader = new FXMLLoader(getClass().getResource("/screens/instructions.fxml"));
+
 		controller = new InstructionScreenController();
 		loader.setController(controller);
-		
+
 		scene = new Scene(loader.load(), 600, 700);
-		
+
 	}
-	
+
 	public void start() {
 		stage.setScene(scene);
 		stage.show();
 	}
-	
+
 	public InstructionScreenController getController() {
 		return controller;
 	}
-	
+
 }

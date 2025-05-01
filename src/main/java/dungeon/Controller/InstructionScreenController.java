@@ -6,6 +6,7 @@ import org.json.JSONTokener;
 
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.ArrayList;
 
 import javafx.fxml.FXML;
@@ -53,7 +54,8 @@ public class InstructionScreenController {
 	public InstructionScreenController() throws IOException {
 		descriptions = new ArrayList<JSONObject>();
 
-		JSONArray entities = new JSONArray(new JSONTokener(new FileReader("src/main/dungeon/Controller/description.json")));
+		InputStream input = getClass().getResourceAsStream("/screens/description.json");
+		JSONArray entities = new JSONArray(new JSONTokener(input));
 		for (int i = 0; i < entities.length(); i++) {
 			descriptions.add(entities.getJSONObject(i));
 		}
@@ -95,12 +97,12 @@ public class InstructionScreenController {
 
 	@FXML
 	public void initialize() {
-		ImageView background = new ImageView(new Image("file:images/help-screen/help-screen-bg.jpg", 700, 700, true, true));
+		ImageView background = new ImageView(new Image(getClass().getResourceAsStream("/images/help-screen/help-screen-bg.jpg"), 700, 700, true, true));
 		background.setEffect(new BoxBlur(12, 12, 1));
 
 		backgroundImage.getChildren().add(background);
 
-		ImageView arrows = new ImageView(new Image("file:images/help-screen/arrows.gif", 225, 150, true, true));
+		ImageView arrows = new ImageView(new Image(getClass().getResourceAsStream("/images/help-screen/arrows.gif"), 225, 150, true, true));
 
 		arrowKeysView.getChildren().add(arrows);
 
@@ -154,10 +156,10 @@ public class InstructionScreenController {
 		ImageView image = null;
 
 		if (entityName.equals("door")) {
-			image = new ImageView(new Image("file:images/help-screen/door.gif", 150, 150, true, true));
+			image = new ImageView(new Image(getClass().getResourceAsStream("/images/help-screen/door.gif"), 150, 150, true, true));
 		} else {
 			image = new ImageView(new Image(
-					String.format("file:images/sprites/%s.png", entityName), 150, 150, true, true
+					getClass().getResourceAsStream(String.format("/images/sprites/%s.png", entityName)), 150, 150, true, true
 			));
 		}
 
